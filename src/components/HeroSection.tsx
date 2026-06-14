@@ -106,8 +106,12 @@ export default function HeroSection() {
 
       {/* Main content */}
       <div ref={textRef} className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="overflow-hidden mb-4">
-          <p className="hero-line label-caps opacity-0 text-gold">
+        <div className="overflow-hidden mb-6 flex flex-col items-center gap-4">
+          <div className="hero-line opacity-0 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold/40 bg-gold/10 backdrop-blur-sm text-gold text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase shadow-[0_0_15px_rgba(201,169,110,0.15)]">
+            <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
+            Flat 25% OFF On All Collections
+          </div>
+          <p className="hero-line label-caps opacity-0 text-white/60">
             Premium Fashion Destination
           </p>
         </div>

@@ -40,31 +40,19 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
       >
-        {/* Top Promo Announcement Bar */}
-        <div className="w-full bg-gradient-to-r from-gold via-yellow-400 to-gold text-black py-2.5 text-center text-xs font-bold tracking-[0.25em] uppercase select-none shadow-sm flex items-center justify-center gap-2 hover:bg-yellow-500 transition-colors duration-300 cursor-pointer">
-          <span className="animate-pulse">✨</span>
-          <span>Flat 25% OFF On All Collections</span>
-          <span className="animate-pulse">✨</span>
-        </div>
 
-        <div className="container-luxury flex items-center justify-between h-[80px] md:h-[96px]">
+
+        <div className="container-luxury flex items-center justify-between h-[64px] md:h-[96px]">
           {/* Logo Area */}
-          <a href="#home" className="flex items-center gap-4 group hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300">
-            <div className="w-16 h-16 md:w-20 md:h-20 overflow-hidden rounded-md flex items-center justify-center border-2 border-transparent group-hover:border-gold transition-colors duration-300 shadow-sm group-hover:shadow-md">
+          <a href="#home" className="flex items-center gap-3 md:gap-4 group hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300">
+            <div className="w-12 h-12 md:w-20 md:h-20 overflow-hidden rounded-md flex items-center justify-center border-2 border-transparent group-hover:border-gold transition-colors duration-300 shadow-sm group-hover:shadow-md">
               <Image src="/logo.jpg" alt="Gravity Menswear Logo" width={80} height={80} className="object-cover w-full h-full" />
             </div>
-            <div className="flex flex-col">
-              <span className={`text-2xl md:text-3xl font-black tracking-[0.08em] uppercase leading-none transition-colors duration-300 ${
-                scrolled ? "text-foreground" : "text-white"
-              }`}>
-                Gravity
-              </span>
-              <span className={`text-xs md:text-sm font-bold tracking-[0.2em] uppercase leading-tight transition-colors duration-300 mt-1 ${
-                scrolled ? "text-muted-foreground" : "text-white/80"
-              }`}>
-                Menswear
-              </span>
-            </div>
+            <span className={`text-xl md:text-3xl font-black tracking-[0.08em] uppercase leading-none transition-colors duration-300 ${
+              scrolled ? "text-foreground" : "text-white"
+            }`}>
+              Gravity
+            </span>
           </a>
 
           {/* Desktop Navigation */}
