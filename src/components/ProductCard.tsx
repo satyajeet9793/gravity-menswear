@@ -18,8 +18,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
 
   const isPant =
     product.category.toLowerCase().includes("jeans") ||
-    product.category.toLowerCase().includes("pant") ||
-    product.category.toLowerCase().includes("straight");
+    product.category.toLowerCase().includes("pant");
 
   // Dynamic absolute zoom-cropping to show only the relevant clothing parts
   let imageStyle: React.CSSProperties = {
